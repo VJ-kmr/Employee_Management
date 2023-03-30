@@ -1,0 +1,65 @@
+
+<h1>Enter the employee details</h1>
+
+
+
+
+
+<div class=" col-md-10 offset-md-2 ">
+
+<div class="m-4 col-sm-8 offset-sm-4" >
+    <form (ngSubmit) = "addemployee()">
+        <div class="row mb-3">
+            <label for="empId" class="col-sm-4 col-form-label">Employee Id</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="empId" id="empId" placeholder="Employee Id" [(ngModel)]= "employee.empId" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="empName" class="col-sm-4 col-form-label">Employee Name</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="empName" id="empName" placeholder="Employee Name" [(ngModel)]= "employee.empName" required>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <label for="empDept" class="col-sm-4 col-form-label">Employee Department</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="empDept" id="empDept" placeholder="Employee Department" [(ngModel)]= "employee.empDept" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="mailId" class="col-sm-4 col-form-label">Employee Mail-Id</label>
+            <div class="col-sm-8">
+                <input type="email" class="form-control" name="mailId" id="mailId" placeholder="Employee Mail-Id" [(ngModel)]= "employee.mailId" required>
+            </div>
+        </div>
+        
+        <div class="row mb-3">
+            <label for="phoneno" class="col-sm-4 col-form-label">Employee phoneno</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="phoneno" id="phoneno" placeholder="Employee phoneno" [(ngModel)]= "employee.phoneNo" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="empSalary" class="col-sm-4 col-form-label">Employee salary</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="empSalary" id="empSalary" placeholder="Employee salary" [(ngModel)]= "employee.salary" required>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="gender" class="col-sm-4 col-form-label">Employee Gender</label>
+            <div class="col-sm-8">
+                <input type="text" class="form-control" name="gender" id="gender" placeholder="Gender" [(ngModel)]= "employee.gender" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 offset-sm-4">
+                <input class="btn btn-primary" type="submit" value="Add Employee">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+</div>

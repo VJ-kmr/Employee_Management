@@ -1,0 +1,47 @@
+<div class="main">
+
+<div class="heading col-md-6 offset-md-3">
+    <h1>Employee Management System</h1>
+</div>
+
+
+<div class=" col-md-6 offset-md-3 ">
+
+    <div class="m-4 col-sm-10 offset-sm-4" >
+        <div class="row">
+            <div class="col-sm-10  offset-sm-3">
+               <h1>Admin Login</h1><br><br>
+            </div>
+        </div>
+        <div *ngIf= "Invalid">
+            <div class="alert alert-danger" role="alert">
+                {{Invalid}}
+              </div>
+        </div>
+        <form  (ngSubmit) = "adminLogin()">
+            <div class="row mb-3">
+                <label for="user" class="col-sm-4 col-form-label">Admin Email</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control" name="user" id="email" placeholder="Enter Email" [(ngModel)]="admin.email"  >
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="password" class="col-sm-4 col-form-label">Password </label>
+                <div class="col-sm-8">
+                    <input type="password" class="form-control" name="password" id="pword" placeholder="Enter Password" [(ngModel)]="admin.password" >
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6 offset-sm-4">
+                       
+                    <input class="btn btn-primary" type="submit" value=" Login">
+                </div>
+            </div>
+        </form>
+    </div>   
+</div>
+
+
+
+</div>
